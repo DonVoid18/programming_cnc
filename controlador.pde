@@ -89,10 +89,10 @@ void keyPressed()
   if (key == '3') speed = 0.1;
   
   if (!streaming) {
-    if (keyCode == LEFT) port.write("G21/G90/G1 X-10  F3500\n");
-    if (keyCode == RIGHT) port.write("G21/G90/G1 X10 F3500\n");
-    if (keyCode == UP) port.write("G21/G90/G1 Y10 F3500\n");
-    if (keyCode == DOWN) port.write("G21/G90/G1 Y-10 F3500\n");
+    if (keyCode == LEFT) port.write("G21/G90/G1 X-40  F3500\n");
+    if (keyCode == RIGHT) port.write("G21/G90/G1 X40 F3500\n");
+    if (keyCode == UP) port.write("G21/G90/G1 Y40 F3500\n");
+    if (keyCode == DOWN) port.write("G21/G90/G1 Y-40 F3500\n");
     if (key == '5') port.write("M300 S50\n");
     if (key == '2') port.write("M300 S30\n");
     if (key == 'h') port.write("G90\nG20\nG00 X0.000 Y0.000 Z0.000\n");
